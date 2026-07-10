@@ -1,4 +1,6 @@
 // This test Case is working as expected. 
+// This is temp addeded
+
 import { test, expect } from '@playwright/test';
 //import { HomePage } from '../pages/HomePage';
 import { RegistrationPage } from '../../pages/Login/RegistrationPage';
