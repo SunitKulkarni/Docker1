@@ -196,7 +196,7 @@ firstName: '',
 });
 
 
-test.only ('Verify valid User', async ({ page }) => {
+test('Verify valid User', async ({ page }) => {
 
 const registrationpage = new RegistrationPage(page);
 const testData = [
