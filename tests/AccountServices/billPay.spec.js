@@ -210,7 +210,7 @@ await billpay.verifySuccessPayment();
     });
 
 
-test.only  ('chk  Acoount and Verify Account should be same', async ({ page }) => {
+test('chk  Acoount and Verify Account should be same', async ({ page }) => {
 const homepage= new HomePage (page);
 const accountpage = new AccountsPage(page);
 const billpay = new BillPayPage(page);
