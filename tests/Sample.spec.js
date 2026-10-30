@@ -14,7 +14,6 @@ test('Valid Login', async ({ page }) => {
     await page.locator('[value="Log In"]').click();
 
     // Assert
-  //await expect(page.locator('text=Accounts Overview')).toBeVisible();
-    await expect(page.getByText('The username and password could not be verified.')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Accounts Overview' })).toBeVisible();
 
 });
