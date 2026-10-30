@@ -47,9 +47,8 @@ export class HomePage {
         await this.page.locator('body').click();
     }
     
-//getByRole('link', { name: 'Forgot login info?' })
     async verifyErrormsg() {
-        await expect(this.page.getByText('An internal error has occurred and has been logged.')).toBeVisible();
+        await expect(this.page.getByText('The username and password could not be verified.')).toBeVisible();
     }
 
     async verifyWarning() {
